@@ -11,7 +11,7 @@ import { withAuth0 } from '@auth0/auth0-react';
 class Header extends React.Component {
   render() {
     // console.log('h1')
-const {isAuthenticated} = this.props.auth0 
+    const {isAuthenticated} = this.props.auth0; 
     // console.log(isAuthenticated)
     // console.log('h2')
     return(
