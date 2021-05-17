@@ -1,3 +1,19 @@
 .jumbotron{
   margin-bottom: 0;
 }
+.cardcontainer{
+  margin: 55px;
+  margin-top: 5px;
+  
+}
+.carousel-inner {
+  position: relative;
+  width: 75%;
+  overflow: hidden;
+}
+.carousel-caption {
+  color: #000000d4;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 12px;
+}
