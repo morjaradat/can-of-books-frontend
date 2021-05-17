@@ -11,12 +11,24 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+// import axios from 'axios';
 
 class App extends React.Component {
+constructor(props){
+  super(props)
+  this.state={
+    data:[],
+  };
+}
 
+update=(da)=>{
+  this.setState({data:da.data})
+  // console.log(this.state.data)
+}
   render() {
     const {isAuthenticated} = this.props.auth0 
-    console.log('app', this.props);
+    // console.log('app', this.props);
+    
     return(
       <>
         <Router>
@@ -24,7 +36,7 @@ class App extends React.Component {
             <Header />
             <Switch>
               <Route exact path="/">
-              {isAuthenticated ? <BestBooks/> : <Login/>}
+              {isAuthenticated ? <BestBooks auth0={this.props.auth0} update={this.update} data={this.state.data} /> : <Login/>}
                 {/* TODO: if the user is logged in, render the `BestBooks` component, if they are not, render the `Login` component */}
               </Route>
               <Route exact path="/profile">
