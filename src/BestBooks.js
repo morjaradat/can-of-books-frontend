@@ -4,6 +4,7 @@ import './BestBooks.css';
 import axios from 'axios';
 import Carousel from 'react-bootstrap/Carousel'
 import codebook from './asstes/image/howToCode.jpg'
+import Button from 'react-bootstrap/Button';
 
 class MyFavoriteBooks extends React.Component {
   async componentDidMount() {
@@ -20,9 +21,9 @@ class MyFavoriteBooks extends React.Component {
     return (
       <div className='cardcontainer'>
         <Carousel>
-          {this.props.data.map(i => {
+          {this.props.data.map((i,idx) => {
             return (
-              <Carousel.Item>
+              <Carousel.Item key={idx}>
                 <img
                   className="d-block w-100"
                   src={codebook}
@@ -32,6 +33,7 @@ class MyFavoriteBooks extends React.Component {
                   <h3>Book Name :{i.name}</h3>
                   <p>description :{i.description}</p>
                   <p>status :{i.status}</p>
+                  <Button onClick={this.props.delete}>Delete</Button>
                 </Carousel.Caption>
               </Carousel.Item>
             )

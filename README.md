@@ -54,3 +54,15 @@ Start time: 1 pm
 Finish time: 5 pm
 
 Actual time needed to complete: 4 Hours
+
+lab 13 :
+
+Name of feature: CRUD (Create & Delete)
+
+Estimate of time needed to complete: 4 Hours
+
+Start time: 2:30 pm
+
+Finish time: 6 pm
+
+Actual time needed to complete: 3.5 Hours
