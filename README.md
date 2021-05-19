@@ -66,3 +66,15 @@ Start time: 2:30 pm
 Finish time: 6 pm
 
 Actual time needed to complete: 3.5 Hours
+
+lab 14 :
+
+Name of feature: CRUD (update)
+
+Estimate of time needed to complete: 2 Hours
+
+Start time: 2:00 pm
+
+Finish time: 2:45 pm
+
+Actual time needed to complete: 45 min
