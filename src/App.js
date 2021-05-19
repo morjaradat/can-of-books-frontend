@@ -96,7 +96,9 @@ updateBook= async (e)=>{
     email: this.props.auth0.user.email
   }
   const updateBook = await axios.put(`${process.env.REACT_APP_MONGODB}/${this.state.index}`, reqBody);
-
+  // console.log(updateBook);
+  // console.log(updateBook.body);
+  // console.log(updateBook.data);
   this.setState({
     data: updateBook.data
   });
